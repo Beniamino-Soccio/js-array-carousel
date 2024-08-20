@@ -32,7 +32,6 @@ downBtn.addEventListener('click', function(){
     if (imgActive === imgs.length){
         imgActive = 0;
     }
-
     imgs[imgActive].classList.add('active');
 })
 
