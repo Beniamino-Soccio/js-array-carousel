@@ -17,3 +17,32 @@ body{
 .container{
     margin: 0 auto;
 }
+
+#carousel{
+    height: 500px;
+    width: 700px;
+    margin: 30px auto;
+    position: relative;
+}
+
+#carousel img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    display: none;
+    margin-top: 150px;
+}
+
+#carousel img.active{
+    display: block;
+}
+
+i{
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    right: -100px;  
+}
+#prev{
+    top: -50px;
+}
