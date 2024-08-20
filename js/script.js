@@ -20,3 +20,22 @@ const imgs = document.querySelectorAll('#carousel img');
 
 let imgActive = 0;
 imgs[imgActive].classList.add('active');
+
+// ! EVENTS
+//down event
+
+downBtn.addEventListener('click', function(){
+    //rendo visibile l'img successiva
+    imgs[imgActive].classList.remove('active');
+    imgActive++;
+    imgs[imgActive].classList.add('active');
+})
+
+//up event
+
+upBtn.addEventListener('click', function(){
+    //rendo visibile l'img successiva
+    imgs[imgActive].classList.remove('active');
+    imgActive--;
+    imgs[imgActive].classList.add('active');
+})
