@@ -28,6 +28,11 @@ downBtn.addEventListener('click', function(){
     //rendo visibile l'img successiva
     imgs[imgActive].classList.remove('active');
     imgActive++;
+    //loop scorrimento img
+    if (imgActive === imgs.length){
+        imgActive = 0;
+    }
+
     imgs[imgActive].classList.add('active');
 })
 
@@ -37,5 +42,9 @@ upBtn.addEventListener('click', function(){
     //rendo visibile l'img successiva
     imgs[imgActive].classList.remove('active');
     imgActive--;
+    //loop scorrimento img
+    if (imgActive === -1){
+        imgActive = imgs.length - 1;
+    }
     imgs[imgActive].classList.add('active');
 })
